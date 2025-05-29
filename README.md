@@ -15,12 +15,13 @@ Here are the main useful files and directories:
 
 ### Run the Fuzzer
 ***
-Installing **TyMut** from source code is supported by using the following commands:
+A docker image of **TyMut** is available at [https://zenodo.org/records/15076243](https://zenodo.org/records/15076243).
+Besides, installing **TyMut** from source code is also supported by using the following commands:
 
 ```bash
 cd ./fuzzer/
 mkdir build && cd build
-cmake -G Ninja ../llvm -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra" -DLLVM_BUILD_TESTS=ON  -DCMAKE_BUILD_TYPE="Release" -DLLVM_ENABLE_ASSERTIONS=ON -DBUILD_SHARED_LIBS=ON
+cmake -G Ninja ../llvm -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra" -DLLVM_BUILD_TESTS=ON  -DCMAKE_BUILD_TYPE="Release" -DLLVM_ENABLE_ASSERTIONS=ON -DBUILD_SHARED_LIBS=ON
 ninja
 ```
 
